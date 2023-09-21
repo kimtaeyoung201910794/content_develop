@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태영이의 쇼핑몰</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        .sec1{
+            float: left;
+            
+            width: 33%;
+        }
+        .main{
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+            border-bottom: solid black 1px;
+            padding-bottom: 20px;
+        }
+        .vec1{
+            
+            margin: 0 auto;
+        }
+        dt{
+            margin-bottom: 30px;
+            border-bottom: solid black 1px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        dd{
+            text-align: center;
+            line-height: 40px;
+        }
+        body{
+            padding: 20px;
+        }
+        .login{
+            float: right;
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        쇼핑몰
+    </div>
+    <div class="login">
+        <button id="move">로그인하기</button>
+    </div>
+    <div class="vec1">
+    <ul>
+        <li class="sec1">
+            <dt>운동기구</dt>
+            <dd><li>바벨</li>
+                <li>덤벨</li>
+                <li>짐볼</li>
+                <li>소도구</li>
+            </dd>
+        </li>
+        <li class="sec1">
+            <dt>보충제</dt>
+            <dd><li>프로틴 쉐이크</li>
+                <li>닭가슴살</li>
+                <li>다이어트 식품</li>
+                <li>운동 보조제</li>
+            </dd>
+        </li>
+        <li class="sec1">
+            <dt>운동복</dt>
+            <dd><li>상의</li>
+                <li>하의</li>
+                <li>신발</li>
+                <li>모자</li>
+            </dd>
+        </li>
+    </ul>
+    </div>
+    <script>
+        var button = ducument.getElementById("move");
+
+        button.addEventListener("click", function() {
+            var newURL= "https://www.example.com";
+            window.location.href=newURL;
+        });
+    </script>
+</body>
+</html>
