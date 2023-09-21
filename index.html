@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>태영이의 쇼핑몰</title>
     <style>
         li{
@@ -13,7 +14,7 @@
             
             width: 33%;
         }
-        .main{
+        .main{ 
             text-align: center;
             margin-bottom: 30px;
             width: 100%;
@@ -36,6 +37,9 @@
         }
         body{
             padding: 20px;
+            background-color: black;
+            color: white;
+            width: 1800px;
         }
         .login{
             float: right;
@@ -45,11 +49,33 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        쇼핑몰
+    <header style=
+    "display: block;
+     opacity: 0.3;
+     width: 100%;
+     background-color: white;
+     color: black;
+     font-size: 40px;
+    ">
+        tyshop
+    </header>
+    
+    <div style="
+        padding-top: 10px;
+        padding-bottom: 10px;
+        "class="login">
+        <button><a style="
+        text-decoration: none;
+        
+        "href="./index2.html">
+        로그인하기
+    </a></button>
     </div>
-    <div class="login">
-        <button><a href="./index2.html">로그인하기</a></button>
+    
+    <div class="content">
+        <video style="width: 100%;" muted autoplay loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="vec1">
     <ul>
@@ -78,6 +104,8 @@
             </dd>
         </li>
     </ul>
+
+
     </div>
     
     <script src="index.js"></script>
