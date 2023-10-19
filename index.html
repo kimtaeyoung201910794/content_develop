@@ -76,9 +76,6 @@
         <div id="dateText">
             
         </div>
-        <div id="math" onclick="mathcheck()">
-            나의 구구단 실력은?
-        </div>
     </div>
     
     <div class="content">
@@ -86,37 +83,85 @@
             <source src="video.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="vec1">
-    <ul>
-        <li class="sec1">
-            <dt>운동기구</dt>
-            <dd><li>바벨</li>
-                <li>덤벨</li>
-                <li>짐볼</li>
-                <li>소도구</li>
-            </dd>
-        </li>
-        <li class="sec1">
-            <dt>보충제</dt>
-            <dd><li>프로틴 쉐이크</li>
-                <li>닭가슴살</li>
-                <li>다이어트 식품</li>
-                <li>운동 보조제</li>
-            </dd>
-        </li>
-        <li class="sec1">
-            <dt>운동복</dt>
-            <dd><li>상의</li>
-                <li>하의</li>
-                <li>신발</li>
-                <li>모자</li>
-            </dd>
-        </li>
-    </ul>
+        </p>
 
-
+    <p id="firstP"
+    style="color:blue; text-align: center; font-size: 100px;"
+    onclick="this.style.color='teal'">
+    tyshop
+    <span style="color:white">
+    이란?
+    </span>
+    </p>
+    <div style="text-align: center;"id="parent">
+        <a style="color: white; font-size: 50px;"href="javascript:createDIV()">tyshop에 대해 버튼 눌러서 알아보기</a>
     </div>
 
-    <script src="index.js"></script>
+
+    <div style="text-align: center; margin-top: 100px; padding: 50px;">
+    <p id="firstP"
+    style="color:blue; background:white; padding: 50px;"
+    onclick="cl()">
+    <span style="color:blue; font-size: 30px;">우리는 운동은 왜 해야할까요?(버튼 눌러서 알아보기)
+    </span>
+    </p>
+    </div>
+
+
+    <div style="text-align: center; margin-top: 100px;">
+    <p style="color:blue; font-size: 50px;" >운동은
+        <span id="mySpan" style="color:black">열정입니다!!!</span>
+        </p>
+        <input style="border: none; background-color: black; color: white;"type="button" value="무엇일까요?(눌러보세요)" onclick="change()"
+        >
+    </div>
+
+    <div>
+        <h1>운동지식 테스트</h1>
+        <button onclick="game()">테스트 진행하기</button>
+        <div id="question_main"></div>
+        <div id="question_letter"></div>
+        <button id="a_btn" onclick="changeOB(this, '30px', 'red', 'a')">a</button>
+        <button id="b_btn" onclick="changeOB(this, '30px', 'blue', 'b')">b</button>
+        <button id="c_btn" onclick="changeOB(this, '30px', 'red', 'c')">c</button>
+        <div id="answer"></div>
+    </div>
+    <div>
+        <button onclick="this.style.backgroundColor='orange'">
+
+            <button onclick="changeOB(this, '30px', 'red')">버튼</button>
+            <button onclick="changeOB(this, '30px', 'blue')">버튼</button>
+            <div onclick="changeOB(this, '25px', 'orange')">
+            여기 클릭하면 크기와 색 변경
+            </div>
+    </div>
+    <div>
+        <h3>내가 좋아하는 과일
+            <button onclick="changeLetter()">누르세요</button>
+            </h3>
+            <hr>
+            저는 빨간 <span>사과</span>를 좋아해서
+            아침마다 한 개씩 먹고 있어요. 운동할 때는 중간 중간에
+            <span>바나나</span>를 먹지요. 탄수화물 섭취가 빨라
+            힘이 납니다. 또한 달콤한 향기를 품은 <span>체리</span>와
+            여름 냄새 물씬 나는 <span>자두</span>를 좋아합니다.
+    </div>
+
+    
+    <div>
+        <hr>
+        <p>아래에 HTML 문서를 작성하고 버튼을 클릭해 보세요.
+        새 윈도우에 HTML 문서가 출력됩니다.</p>
+        <textarea id="srcText" rows="10" cols="50"></textarea>
+        <br>
+        <br>
+        <button onclick="showHTML()">HTML 문서 출력하기</button>
+    </div>
+
+    <div id="parent">
+        <a href="javascript:createDIV()">DIV 생성</a>
+    </div>
+    
+    <script src="../content_develop/index.js"></script>
 </body>
 </html>
