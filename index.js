@@ -87,7 +87,7 @@ function createDIV() {
 }
 
 
-const value = changeOB.value;
+// const value = changeOB.value;
 
 function game() {
     var arr = new Array();
